@@ -2,7 +2,6 @@ import React from 'react'
 import './Login.css'
 import { Link } from 'react-router-dom'
 
-import video from '/assets/video.mp4'
 import logo from '/assets/logo2.png'
 
 const Login = () => {
@@ -10,7 +9,7 @@ const Login = () => {
     <div className='loginPage flex'>
         <div className='container flex'>
             <div className='videoDiv'>
-                <video src={video} autoPlay muted loop></video>
+
                 <div className='textDiv'>
                   <h2 className='title'>Title just for trying </h2>
                   <p>explore and blow ur mind etc etc ..</p>
