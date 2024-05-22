@@ -12,14 +12,14 @@ function ActHero() {
 
   return (
     
-    <div className="bg-[url('/assets/pexels-raouf-bedrani-11377053.jpg')] bg-no-repeat bg-cover h-[80vh] -top-[10vh] relative text-black flex justify-center items-center">
+    <div className="bg-[url('/assets/ram-kumar-qEbH5frgET4-unsplash.jpg')] bg-no-repeat bg-cover h-[100vh] -top-[10vh] relative text-black flex justify-center items-center">
       <div className="lg:w-2/3 mx-auto text-center">
         <div className={`transition-opacity duration-500 ${showSearchBar ? 'opacity-2000' : 'opacity-0'}`}>
-          <h1 className="text-gray-700 text-4xl flex justify-center my-8 font-bold text-center">
+          <h1 className="text-white text-4xl flex justify-center my-8 font-bold text-center">
               Find your dream <br />
               Travelling experience
           </h1>
-          <p className="text-gray-700 text-xl flex justify-center my-8 text-center">
+          <p className="text-white text-xl flex justify-center my-8 text-center">
               By discovering the Algerian territories and natural wonders.
           </p>
           {/* Apply fade-in animation to the Search_bar component */}

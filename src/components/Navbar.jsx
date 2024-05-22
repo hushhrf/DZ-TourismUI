@@ -69,7 +69,7 @@
 // }     
 
 import { useState } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate , Link } from "react-router-dom";
 import { FaBars, FaPhone } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import { BsPersonFill, BsPersonCircle } from 'react-icons/bs';
@@ -77,6 +77,7 @@ import { BsPersonFill, BsPersonCircle } from 'react-icons/bs';
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const navigate = useNavigate();
+  const [isHovered, setIsHovered] = useState(false);
 
   const handleSignUpClick = () => {
     navigate("/signup"); 
@@ -91,7 +92,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-[url('/assets/pexels-raouf-bedrani-11377053.jpg')] bg-no-repeat lg:bg-cover">
+    <nav className="sticky top-0 z-50 bg-transparent bg-no-repeat lg:bg-cover">
       <div className="container mx-auto flex flex-wrap items-center justify-between px-6">
         <div className="w-full sticky top-0 flex justify-between lg:w-auto lg:static lg:justify-start h-[10vh] items-center">
           <a className="font-medium tracking-wider transition-colors cursor-pointer" onClick={() => navigate("/")}>
@@ -105,10 +106,10 @@ const Navbar = () => {
         </div>
         <div className={"lg:flex flex-grow items-center lg:h-auto h-screen justify-center" + (navbarOpen ? " flex" : " hidden")}>
           <ul className="flex items-center xl:gap-12 gap-x-4 max-lg:hidden">
-            <li className="py-2 flex text-gray uppercase font-bold items-center leading-snug hover:text-[#5badbb] ">
-              <NavLink to="/Accommodation">Home</NavLink>
+            <li className="py-2 flex text-gray-700 uppercase font-bold items-center leading-snug hover:text-[#5badbb] ">
+              <NavLink to="/">Home</NavLink>
             </li>
-            <li className="py-2 flex text-gray uppercase font-bold items-center leading-snug hover:text-[#5badbb] ">
+            <li className="py-2 flex text-gray-700 uppercase font-bold items-center leading-snug hover:text-[#5badbb] ">
               <NavLink to="/">About us</NavLink>
             </li>
             
@@ -126,14 +127,32 @@ const Navbar = () => {
           
         </div>
         <div className="flex gap-4 max-lg:hidden">
-                <button className="bg-[#6fcfdd] text-white rounded-full px-4 py-1 hoverBtn flex items-center gap-2">
-                        Sign up
-                </button>
-                <button className=" rounded-full bg-[#faf5ee] text-gray w-20 h-10 flex items-center justify-center hover:bg-[#6fcfdd] hover:text-white">
+            <div className="flex space-x-4">
+                <Link to={'/authenticate'}>
+                    <button
+                        className={`rounded-full w-20 h-10 px-1 py-1 ${
+                            isHovered ? 'bg-white text-primary border-primary border transition duration-700 hoverBtn' : 'bg-primary text-white transition duration-700'
+                        }`}
+                        onMouseEnter={() => setIsHovered(true)}
+                        onMouseLeave={() => setIsHovered(false)}
+                    >
+                        Sign in
+                    </button>
+                </Link>
+                <Link to={"/Register"}>
+                    <button
+                        className={`rounded-full w-20 h-10 flex items-center justify-center ${
+                            isHovered ? 'bg-primary text-white transition duration-700 hoverBtn' : 'bg-white text-primary border border-primary transition duration-700'
+                        }`}
+                        onMouseEnter={() => setIsHovered(true)}
+                        onMouseLeave={() => setIsHovered(false)}
+                    >
                         Register
-                </button>
-                <button className="rounded-full bg-[#faf5ee] text-gray w-10 h-10 flex items-center justify-center hover:bg-[#6fcfdd] hover:text-white" onClick={handleProfileClick}>
-                    <BsPersonCircle className="text-white  cursor-pointer" />
+                    </button>
+                </Link>
+            </div>
+                <button className="group rounded-full bg-white border border-primary text-gray w-10 h-10 flex items-center justify-center hover:bg-primary transition duration-700" onClick={handleProfileClick}>
+                    <BsPersonCircle className="text-primary group-hover:text-white cursor-pointer group-hover:transition group-hover:duration-700" />
                 </button>
         </div>
       </div>

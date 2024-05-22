@@ -1,27 +1,27 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import PopularCards from "../components/PopularCards"
+import PopularCards from "../components/PopularCards";
+import './costum.css'
 
 
 
 const PopularDest = () => {
   const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 7,
-    },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 4,
     },
+    smallDesktop: {
+      breakpoint: { max: 1400, min: 1024 },
+      items: 3,
+    },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 1125, min: 464 },
       items: 2,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 1024, min: 0 },
       items: 1,
     },
   };
@@ -59,8 +59,9 @@ const PopularDest = () => {
 
   return (
     <div className="w-full py-8 px-44">
-      <h1 className="text-gray-700 text-4xl flex justify-center my-8 font-bold text-center">popular destinations</h1>
-    <Carousel responsive={responsive} >
+      <h1 className="text-gray-700 text-3xl flex mt-8 font-bold">Popular destinations</h1>
+      <p className="mb-8 text-gray-400">Most popular choices for travellers</p>
+    <Carousel responsive={responsive}>
   {popular_cards}
 </Carousel>
 </div>

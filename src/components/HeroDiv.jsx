@@ -87,13 +87,15 @@ function HeroDiv() {
     //   {/* <Search_bar/> */}
       
     // </div>
-    <div className="bg-[url('/assets/pexels-raouf-bedrani-11377053.jpg')] bg-no-repeat bg-cover h-[80vh] -top-[10vh] relative text-black flex justify-center items-center">
+    <div className="bg-[url('/assets/louis-magnotti-YvCg5X3pWzc-unsplash.jpg')] bg-no-repeat bg-cover h-[100vh] -top-[10vh] relative text-black flex justify-center items-center">
       <div className="lg:w-2/3 mx-auto text-center">
-          <h1 className="text-gray-700 text-4xl flex justify-center my-8 font-bold text-center">
-              Find your dream <br />
+          <h1 className="text-white text-5xl flex justify-start my-8 font-bold text-left">
+              Find your <span className="pl-2 text-blue-500"> dream </span>
+          </h1>
+          <h1 className="text-white text-5xl flex justify-start my-8 font-bold text-left">
               Travelling experience
           </h1>
-          <p className="text-gray-700 text-xl flex justify-center my-8 text-center">
+          <p className="text-white outline-black text-xl flex justify-start my-8 text-center">
               By discovering the Algerian territories and natural wonders.
           </p>
           
@@ -106,14 +108,14 @@ function HeroDiv() {
               loop
             /> */}
         
-          <div className="flex justify-center gap-4">
-              <div className="rounded-full border border-white flex items-center gap-4 p-1">
-                  <button className="bg-white rounded-full text-black text-sm font-medium px-8 py-2" >
+          <div className="flex justify-start gap-4">
+              <div className="rounded-full flex items-center gap-4 p-1">
+                  <button className="bg-transparent text-white border border-white rounded-full font-medium px-4 py-2 hover:bg-primary hover:duration-200 hover:text-white hover:border-none transition duration-200 hoverBtn" >
                       <a href="/Accommodation">Accommodation</a>
                   </button>
               </div>
-              <div className="rounded-full border border-white flex items-center gap-4 p-1">
-                  <button className="bg-white rounded-full text-black text-sm font-medium px-8 py-2">
+              <div className="rounded-full flex items-center gap-4 p-1">
+                  <button className="bg-transparent border border-white rounded-full text-white font-medium px-4 py-2 hover:bg-primary hover:duration-200 hover:text-white hover:border-none transition duration-200 hoverBtn">
                       <a href="/Activity">Activity</a>
                   </button>
               </div>

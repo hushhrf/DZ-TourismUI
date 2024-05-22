@@ -7,8 +7,8 @@ export const listData = [
     description: "description",
     star_Rating: 5,
     street_Address: "i9ama, Constantine",
-    latitude: 51.5074,
-    longitude: -0.1278,
+    latitude: 36.365,
+    longitude: 6.61472,
   },
   {
     id: 2,

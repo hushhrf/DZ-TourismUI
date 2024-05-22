@@ -10,13 +10,13 @@ import FeaturedProperties from "../components/FeaturedProperties"
 
 const Home = () => {
   return (
-    <div>
+    <div className="bg-gray-100">
       
       <main><HeroDiv/>
         <PopularDest/>
         <FeaturedProperties/>
         <MailList/>
-            
+
       {/* <Search_bar/> */}
       </main>
       <Footer />

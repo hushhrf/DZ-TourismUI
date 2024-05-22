@@ -16,6 +16,11 @@ import Activity from "./routes/Activity";
 import ProfilePage from "./routes/profilePage/profilePage";
 import NewPostPage from "./routes/newPostPage/newPostPage";
 import { listPageLoader, profilePageLoader, singlePageLoader } from "./lib/loaders";
+import Register from "./components/Authentication/Register.jsx";
+import AccountActivation from "./components/Authentication/AccountActivation.jsx";
+import Login from "./components/Authentication/Login.jsx";
+import BookForm from "./components/bookingForm/BookForm.jsx";
+import ActivityRegister from "./components/Authentication/ActivityRegister.jsx";
 
 
 function App() {
@@ -52,6 +57,26 @@ function App() {
         {
           path:"/add",
           element:<NewPostPage/>
+        },
+        {
+          path:"/Register",
+          element:<Register/>
+        },
+        {
+          path:"/Activate-account",
+          element:<AccountActivation/>
+        },
+        {
+          path:"/Authenticate",
+          element:<Login/>
+        },
+        {
+          path:"/bookingForm",
+          element:<BookForm/>
+        },
+        {
+          path:"/ActivityRegister",
+          element:<ActivityRegister/>
         }
       ]
     }

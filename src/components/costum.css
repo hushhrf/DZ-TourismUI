@@ -1,0 +1,19 @@
+/* custom.css */
+.react-multiple-carousel__arrow::before {
+    @apply bg-blue-500 text-white rounded-full w-[30px] opacity-80;
+}
+.react-multiple-carousel__arrow::after {
+    @apply bg-blue-500 text-white; /* Replace with your desired Tailwind classes */
+}
+.react-multiple-carousel__arrow {
+    @apply bg-white; /* Replace with your desired Tailwind classes */
+}
+
+/* Optionally, add hover and focus states */
+.react-multiple-carousel__arrow:hover {
+    @apply bg-transparent text-white;
+    @apply opacity-80
+}
+.react-multiple-carousel__arrow:focus {
+    @apply bg-transparent;
+}

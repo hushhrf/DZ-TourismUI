@@ -1,4 +1,5 @@
 import React from 'react';
+import apiRequest from "../lib/apiRequest.js";
 
 const FeaturedProperties = () => {
   const cardData = [
@@ -42,11 +43,15 @@ const FeaturedProperties = () => {
   ];
 
   return (
-    <div>
-        <h1 className="text-gray-700 text-4xl flex justify-center my-8 font-bold text-center">featured properties</h1>
+
+    <div className="px-44">
+        <h1 className="text-gray-700 text-3xl text-left mt-8 font-bold">
+          Featured properties
+        </h1>
+      <p className="mb-8 text-gray-400">Explore our top-rated properties</p>
         <div className="max-w-7xl mx-auto flex flex-wrap justify-between gap-4 rounded-lg py-4">
       {cardData.map((item) => (
-        <div key={item.id} className="flex-1 flex flex-col gap-4 border border-gray-200 rounded-lg shadow-md">
+        <div key={item.id} className="flex-1 bg-white flex flex-col gap-4 border border-gray-200 rounded-lg shadow-md">
           <img
             src={item.imageurl}
             alt=""

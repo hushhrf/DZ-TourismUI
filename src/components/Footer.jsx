@@ -1,6 +1,7 @@
 import { FaTwitter, FaInstagram, FaFacebookF } from "react-icons/fa";
 import { TiSocialGooglePlus } from "react-icons/ti";
 import { FaBars, FaPhone } from "react-icons/fa";
+import {Link} from "react-router-dom";
 const Footer = () => {
     return(
      <footer>
@@ -22,6 +23,7 @@ const Footer = () => {
                     <div>
                         <p className="text-xs text-white mt-2">Write a review</p>
                         <p className="text-xs text-white mt-2">Hotel recommandations</p>
+                        <Link to='/ActivityRegister' className="text-xs text-white mt-2 underline">join us as Activity Provider</Link>
                     </div>
                     
                     <div>
