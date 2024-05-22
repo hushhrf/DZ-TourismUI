@@ -21,10 +21,7 @@ function SinglePage() {
                 </div>
                 <div className="price">$ {singlePostData.price}</div>
               </div>
-              {/* <div className="user">
-                <img src={userData.img} alt="" />
-                <span>{userData.name}</span>
-              </div> */}
+              
             </div>
             <div className="bottom">{singlePostData.description}</div>
           </div>

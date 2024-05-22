@@ -116,7 +116,7 @@ function HeroDiv() {
               </div>
               <div className="rounded-full flex items-center gap-4 p-1">
                   <button className="bg-transparent border border-white rounded-full text-white font-medium px-4 py-2 hover:bg-primary hover:duration-200 hover:text-white hover:border-none transition duration-200 hoverBtn">
-                      <a href="/Activity">Activity</a>
+                      <a href="/Activity">Tours & Activities</a>
                   </button>
               </div>
           </div>

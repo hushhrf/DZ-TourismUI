@@ -49,7 +49,7 @@ export default function SearchBar() {
 
   return (
     <div className="flex justify-center">
-      <div className="bg-white h-fit rounded-full border-solid border-[3px] border-gray-200 absolute top-[80vh] w-4/5 shadow-lg">
+      <div className="bg-white h-fit rounded-full border-solid border-[3px] border-gray-200 absolute top-[65vh] w-4/5 shadow-lg">
         <div className="flex flex-wrap gap-1 justify-between px-4 py-[10px]">
           <div>
             <div className="relative h-10 w-40 flex items-center">

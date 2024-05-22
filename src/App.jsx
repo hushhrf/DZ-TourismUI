@@ -15,7 +15,8 @@ import SinglePage from "./routes/singlePage/singlePage"
 import Activity from "./routes/Activity";
 import ProfilePage from "./routes/profilePage/profilePage";
 import NewPostPage from "./routes/newPostPage/newPostPage";
-import { listPageLoader, profilePageLoader, singlePageLoader } from "./lib/loaders";
+import { listPageLoader, listPageLoaderAct, profilePageLoader, singlePageLoader } from "./lib/loaders";
+import ListPageAct from "./routes/ActivityListpage/ActListpage";
 import Register from "./components/Authentication/Register.jsx";
 import AccountActivation from "./components/Authentication/AccountActivation.jsx";
 import Login from "./components/Authentication/Login.jsx";
@@ -40,6 +41,11 @@ function App() {
         {
           path:"/Activity",
           element:<Activity/>
+        },
+        {
+          path:"/listAct",
+          element:<ListPageAct/>,
+          loader: listPageLoaderAct,
         },
         {
           path:"/list",

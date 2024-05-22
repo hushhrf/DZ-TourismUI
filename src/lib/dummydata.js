@@ -5,19 +5,19 @@ export const listData = [
     img: "https://images.pexels.com/photos/1918291/pexels-photo-1918291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     city: "Constantine",
     description: "description",
-    star_Rating: 5,
-    street_Address: "i9ama, Constantine",
-    latitude: 36.365,
-    longitude: 6.61472,
+    star_Rating: 4,
+    street_Address: "Constantine",
+    latitude: 36.2833,
+    longitude: 6.61667,
   },
   {
     id: 2,
-    name: "Ibis",
+    name: "Marriot",
     img: "https://images.pexels.com/photos/1428348/pexels-photo-1428348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     city: "Constantine",
     description: "description",
-    star_Rating: 5,
-    street_Address: "i9ama, Constantine",
+    star_Rating: 4,
+    street_Address: " Constantine",
     latitude: 52.4862,
     longitude: -1.8904,
   },
@@ -67,6 +67,62 @@ export const listData = [
   },
   
 ];
+
+export const ActData =[
+  {
+    name: "Yoga Class", 
+    description: "A relaxing yoga session suitable for all levels.", 
+    category: "Fitness", 
+    location: "Central Park", 
+    date: "2024-05-21T10:00:00", 
+    duration: 90, 
+    price: 15.0, 
+    capacity: 20 
+},
+{
+  name: "Yoga Class", 
+  description: "A relaxing yoga session suitable for all levels.", 
+  category: "Fitness", 
+  location: "Central Park", 
+  date: "2024-05-21T10:00:00", 
+  duration: 90, 
+  price: 15.0, 
+  capacity: 20 
+},
+{
+  name: "Yoga Class", 
+  description: "A relaxing yoga session suitable for all levels.", 
+  category: "Fitness", 
+  location: "Central Park", 
+  date: "2024-05-21T10:00:00", 
+  duration: 90, 
+  price: 15.0, 
+  capacity: 20 
+},
+{
+  name: "Yoga Class", 
+  description: "A relaxing yoga session suitable for all levels.", 
+  category: "Fitness", 
+  location: "Central Park", 
+  date: "2024-05-21T10:00:00", 
+  duration: 90, 
+  price: 15.0, 
+  capacity: 20 
+},
+{
+  name: "Yoga Class", 
+  description: "A relaxing yoga session suitable for all levels.", 
+  category: "Fitness", 
+  location: "Central Park", 
+  date: "2024-05-21T10:00:00", 
+  duration: 90, 
+  price: 15.0, 
+  capacity: 20 
+},
+]
+
+  
+
 
 export const singlePostData = {
   id: 1,
