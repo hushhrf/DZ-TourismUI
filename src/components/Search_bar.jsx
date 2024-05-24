@@ -47,6 +47,8 @@ export default function SearchBar() {
     }));
   };
 
+  const searchParams = new URLSearchParams(query).toString();
+
   return (
     <div className="flex justify-center">
       <div className="bg-white h-fit rounded-full border-solid border-[3px] border-gray-200 absolute top-[65vh] w-4/5 shadow-lg">
@@ -164,7 +166,7 @@ export default function SearchBar() {
             </div>
           </div>
           <Link
-            to={`/list?city=${query.city}&CheckIn=${query.CheckIn}&CheckOut=${query.CheckOut}&adult=${query.adult}&children=${query.children}&room=${query.room}`}
+            to={`/search?${searchParams}`}
           >
             <button className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-full">
               Search

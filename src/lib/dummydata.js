@@ -121,6 +121,65 @@ export const ActData =[
 },
 ]
 
+export const Roomtypes =[
+  {  
+    id: 1,
+    name : "double" ,   
+    description : "for two people " ,   
+    id_Hotel : 4 ,   
+    bed_Type: "double", 
+    price: 10000, 
+    room :   [  
+        {  
+            id: 6,
+            availability_status: false,  
+            description: "2",  
+            capacity: 2  ,  
+            room_number : 4 
+        },  
+        {  
+            id: 2,
+            availability_status: true,  
+            description: "3",  
+            capacity: 2 ,  
+            room_number : 5 
+ 
+        }   
+    ]  
+      
+},
+{  
+  id: 1,
+  name : "double" ,   
+  description : "for two people " ,   
+  id_Hotel : 4 ,   
+  bed_Type: "double", 
+  price: 10000, 
+  room :   [  
+      {  
+          id: 8,
+          availability_status: true,  
+          description: "2",  
+          capacity: 3  ,  
+          room_number : 4 
+      },  
+      {  
+          id: 2,
+          availability_status: true,  
+          description: "3",  
+          capacity: 3 ,  
+          room_number : 5 
+
+      }   
+  ]  
+    
+}
+
+
+
+
+]
+
   
 
 
@@ -134,16 +193,12 @@ export const singlePostData = {
     "https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     "https://images.pexels.com/photos/2467285/pexels-photo-2467285.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   ],
-  bedRooms: 2,
-  bathroom: 1,
-  size: 861,
-  latitude: 51.5074,
-  longitude: -0.1278,
+  phone_number: 559821701,
+  latitude: 36.2833,
+  longitude: 6.61667,
   city: "Constantine",
   street_Address: "i9ama, Constantine",
-  school: "250m away",
-  bus: "100m away",
-  restaurant: "50m away",
+  star_Rating: 5,
   description:
     "Future alike hill pull picture swim magic chain seed engineer nest outer raise bound easy poetry gain loud weigh me recognize farmer bare danger. actually put square leg vessels earth engine matter key cup indeed body film century shut place environment were stage vertical roof bottom lady function breeze darkness beside tin view local breathe carbon swam declared magnet escape has from pile apart route coffee storm someone hold space use ahead sheep jungle closely natural attached part top grain your grade trade corn salmon trouble new bend most teacher range anybody every seat fifteen eventually",
 };

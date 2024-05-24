@@ -21,12 +21,13 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+    console.log(formData);
     try {
-      const response = await apiRequest.post('/api/v1/auth/authenticate', formData);
+      const response = await axios.post('/api/v1/auth/authenticate', formData);
       const accessToken = response.data.token;
       localStorage.setItem('accessToken', accessToken); 
       console.log('logged in:', accessToken); // Log the access token
+      window.location.href = '/';
     } catch (error) {
       console.error('Login failed:', error.response.data);
       setError('Login failed. Please check your credentials.');

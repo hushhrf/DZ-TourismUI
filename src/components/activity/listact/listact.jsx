@@ -7,7 +7,7 @@ function ListAct(){
   return (
     <div className='list'>
       {ActData.map(item=>(
-        <Card key={item.id} item={item}/>
+        <carA key={item.id} item={item}/>
       ))}
     </div>
   )

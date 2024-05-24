@@ -53,12 +53,12 @@ import { BsStarFill } from "react-icons/bs";
 function Card({ item }) {
   return (
     <div className="card">
-      <Link to={`/${item.id}`} className="imageContainer">
+      <Link to={`/api/v1/Hotel/getHotelById/${item.id_Hotel}`} className="imageContainer">
         <img src={item.img} alt="" />
       </Link>
       <div className="textContainer">
         <h2 className="title">
-          <Link to={`/${item.id}`}>{item.name}</Link>
+          <Link to={`/api/v1/Hotel/getHotelById/${item.id_Hotel}`}>{item.name}</Link>
         </h2>
         <p className="address">
           <img src="/assets/pin.png" alt="" />

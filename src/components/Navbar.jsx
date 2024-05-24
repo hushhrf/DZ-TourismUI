@@ -106,10 +106,10 @@ const Navbar = () => {
         </div>
         <div className={"lg:flex flex-grow items-center lg:h-auto h-screen justify-center" + (navbarOpen ? " flex" : " hidden")}>
           <ul className="flex items-center xl:gap-12 gap-x-4 max-lg:hidden">
-            <li className="py-2 flex text-gray-700 uppercase font-bold items-center leading-snug hover:text-[#5badbb] ">
+            <li className="py-2 flex text-gray-700 font-normal items-center leading-snug hover:text-[#5badbb] ">
               <NavLink to="/">Home</NavLink>
             </li>
-            <li className="py-2 flex text-gray-700 uppercase font-bold items-center leading-snug hover:text-[#5badbb] ">
+            <li className="py-2 flex text-gray-700 font-normal items-center leading-snug hover:text-[#5badbb] ">
               <NavLink to="/">About us</NavLink>
             </li>
             
@@ -129,30 +129,19 @@ const Navbar = () => {
         <div className="flex gap-4 max-lg:hidden">
             <div className="flex space-x-4">
                 <Link to={'/authenticate'}>
-                    <button
-                        className={`rounded-full w-20 h-10 px-1 py-1 ${
-                            isHovered ? 'bg-white text-primary border-primary border transition duration-700 hoverBtn' : 'bg-primary text-white transition duration-700'
-                        }`}
-                        onMouseEnter={() => setIsHovered(true)}
-                        onMouseLeave={() => setIsHovered(false)}
-                    >
+                    <button className="bg-primary border border-white rounded-full text-white font-medium px-4 py-2 hover:bg-primary hover:duration-200 hover:text-white hover:border-none transition duration-200 hoverBtn" >
                         Sign in
                     </button>
                 </Link>
                 <Link to={"/Register"}>
-                    <button
-                        className={`rounded-full w-20 h-10 flex items-center justify-center ${
-                            isHovered ? 'bg-primary text-white transition duration-700 hoverBtn' : 'bg-white text-primary border border-primary transition duration-700'
-                        }`}
-                        onMouseEnter={() => setIsHovered(true)}
-                        onMouseLeave={() => setIsHovered(false)}
+                    <button className="bg-primary border border-white rounded-full text-white font-medium px-4 py-2 hover:bg-primary hover:duration-200 hover:text-white hover:border-none transition duration-200 hoverBtn"
                     >
                         Register
                     </button>
                 </Link>
             </div>
-                <button className="group rounded-full bg-white border border-primary text-gray w-10 h-10 flex items-center justify-center hover:bg-primary transition duration-700" onClick={handleProfileClick}>
-                    <BsPersonCircle className="text-primary group-hover:text-white cursor-pointer group-hover:transition group-hover:duration-700" />
+                <button className="group rounded-full bg-primary border border-white w-10 h-10 flex items-center justify-center hover:bg-primary hoverBtn transition duration-200" onClick={handleProfileClick}>
+                    <BsPersonCircle className="text-white cursor-pointer group-hover:transition group-hover:duration-200" />
                 </button>
         </div>
       </div>

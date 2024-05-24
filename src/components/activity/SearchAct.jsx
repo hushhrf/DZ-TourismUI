@@ -9,6 +9,7 @@ import "react-date-range/dist/theme/default.css";
 import apiRequest from "../../lib/apiRequest";
 import { FaWalking } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 export default function SearchAct() {
   const params = useParams();

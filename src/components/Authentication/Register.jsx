@@ -35,7 +35,7 @@ const Register = () => {
     if(Object.keys(validationErrors).length === 0){
       alert("Registred Succefully");
       console.log(formData);
-      apiRequest.post('/api/v1/auth/register',formData)
+      apiRequest.post('/api/v1/auth/registerUser',formData)
       .then(result => {
         console.log(result);
         window.location.href = '/';
